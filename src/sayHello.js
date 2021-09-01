@@ -1,15 +1,17 @@
 import React from 'react';
+import './App.css';
 
-function Hello(){
+function Hello({name,message}){
     const sayHello = () => {
         console.log("hello there!");
       }
-      // const counter = 0; 
-        
       return (
         <div className="App">
-          <h1>Hello</h1>
-          <button onClick={sayHello}>Hello</button>
+          <div className="Tweet">
+              <p>{name}</p>
+              <p>{message}</p>
+              <p>Number of likes</p>
+          </div>
         </div>
       );
 }
