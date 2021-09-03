@@ -1,11 +1,11 @@
 
 import React,{useState} from 'react';
+import AppClassBased from './AppClassBased';
 import Hello from './sayHello';
 
 function App() {  
   const [isRed,setRed]= useState(false);
   const [count, setCount] = useState(0);
-  const
   const Increament = () =>{
     setCount(count+1);
     setRed(!isRed);
@@ -19,6 +19,7 @@ function App() {
           <Hello name="Aniket" message="Random message2"/>
           <Hello name="Ved" message="Random message3"/>
           <Hello name="Ani" message="Random message"/>
+          <AppClassBased></AppClassBased>
     </div>
   );
 }
